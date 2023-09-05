@@ -14,3 +14,14 @@ export async function createPost(
 ) {
   return prisma.post.create({ data: post });
 }
+
+export async function updatePost(
+  post: Pick<Post, "slug" | "title" | "markdown">,
+) {
+  return prisma.post.update({
+    where: {
+      slug: post.slug,
+    },
+    data: post,
+  });
+}

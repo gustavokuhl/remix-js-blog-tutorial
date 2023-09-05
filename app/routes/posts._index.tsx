@@ -12,7 +12,7 @@ export const loader = async () => {
 export default function Posts() {
   const { posts } = useLoaderData<typeof loader>();
   return (
-    <main>
+    <main className="mx-2">
       <h1>Posts</h1>
       <Link to="admin" className="text-xl text-red-600 underline">
         Admin

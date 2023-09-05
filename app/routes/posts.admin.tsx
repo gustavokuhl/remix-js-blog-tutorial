@@ -13,7 +13,7 @@ export default function PostAdmin() {
     <div className="mx-auto max-w-4xl">
       <h1 className="my-6 mb-2 border-b-2 text-center text-3xl">Blog Admin</h1>
       <div className="grid grid-cols-4 gap-6">
-        <nav className="col-span-4 md:col-span-1">
+        <nav className="col-span-4 md:col-span-1 mx-2">
           <ul>
             {posts.map((post) => (
               <li key={post.slug}>
@@ -24,7 +24,7 @@ export default function PostAdmin() {
             ))}
           </ul>
         </nav>
-        <main className="col-span-4 md:col-span-3">
+        <main className="col-span-4 md:col-span-3 mx-2">
           <Outlet />
         </main>
       </div>
